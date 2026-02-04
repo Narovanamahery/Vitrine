@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narovana</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./pic/logo2.png" type="image/x-icon">
+  <link rel="stylesheet" href="./carousel-styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="./pic/logo2.png" alt="">
+      <div>Narovana_m</div>
+    </div>
+    <div class="right-section">
+      <div class="home">
+        <a href="#home">Home</a>
+      </div>
+      <div class="about">
+        <a href="#about">A Propos</a>
+      </div>
+      <div class="contact">
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <button id="theme-toggle" class="theme-toggle">
+      <span class="dark-icon">🌙</span>
+      <span class="light-icon">☀️</span>
+    </button>
+  </header>
+  <div class="container">
+    <div class="slide-container" id="home">
+      <div class="slides-wrapper">
+        <div class="homepage active" style="background-image: url('./pic/visuel.png');">
+        <div class="title1">
+          <p>"Maitriser la complexité du vivant,</p>
+          <p>du sol au cheptel"</p>
+        </div>
+        <div class="about-btn" id="about">
+          <a href="#about">En Savoir Plus</a>
+        </div>
+        </div>
+
+        <div class="homepage" id="slide2" style="background-image: url('./pic/visuel1.jpg');">
+          <div class="title1">
+            <p>"Maximiser l'efficacité alimentaire</p>
+            <p>et l'indice de consommation."</p>
+          </div>
+          <div class="about-btn" id="about">
+            <a href="#about">Mes expertises</a>
+          </div>
+        </div>
+
+        <div class="homepage" id="slide3" style="background-image: url('./pic/visuel2.png');">
+          <div class="title1">
+            <p>"Transformer la donnée d'élevage</p>
+            <p>en décisions rentables."</p>
+          </div>
+          <div class="about-btn" id="about">
+            <a href="#about">Découvrir les outils</a>
+          </div>
+        </div>
+
+        <div class="homepage" id="slide4" style="background-image: url('./pic/visuel3.avif');">
+          <div class="title1">
+            <p>"Optimiser l'environnement</p>
+            <p>pour révéler le potentiel génétique."</p>
+          </div>
+          <div class="about-btn" id="about">
+            <a href="#about">Plus d'Information</a>
+          </div>
+        </div> 
+      </div>
+        <!-- Contrôles de navigation -->
+      <button class="slide-btn prev-btn">‹</button>
+      <button class="slide-btn next-btn">›</button>
+      
+      <!-- Indicateurs de slide (points) -->
+      <div class="slide-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+        <span class="indicator" data-slide="3"></span>
+      </div>
+    </div>
+
+    <div class="aboutpage" id="about">
+      <div class="about-txt">A Propos</div>
+      <div class="about-section">
+        <img src="./pic/Picture.jpeg" alt="My_Pic">
+        <div class="text-about">
+          <h3>Narovana Mahery</h3>
+          <p>Ingénieur Agronome, je conçois et optimise des systèmes de production animale durables, rentables et adaptés aux réalités locales.
+Mon approche repose sur la rigueur scientifique, l’efficacité technique et la valorisation des ressources disponibles, afin d’améliorer la performance des élevages tout en respectant l’environnement et le bien-être animal.</p>
+        </div>
+        <div class="skill">
+          <div class="skill-group">
+            <img src="./pic/icon/ico-opt.png" alt="Optimisation">
+            <p>Conception & optimisation d’élevage</p>
+          </div>
+          <div class="skill-group">
+            <img src="./pic/icon/ico-eco.png" alt="Technique">
+            <p>Analyse technico-économique</p>
+          </div>
+          <div class="skill-group">
+            <img src="./pic/icon/ico-durabilité.png" alt="Durable">
+            <p>Durabilité & bien-être animal</p>
+          </div>
+        </div>
+        <div class="suppl-div">
+          <h3>Modélisation & outils numériques</h3>
+          <div>
+            <img src="./pic/icon/ico-ingénierie.png" alt="">
+            <img src="./pic/icon/ico-ingénierie.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="contactpage" id="contact">
+      <div class="contact-txt">Contact</div>
+      <div class="contact-section">
+        <div class="contact-group">
+          <img src="./pic/icon/icons8-whatsapp-50.png" alt="">
+          <a href="https://wa.me/382298810">+261 38 22 988 10</a>
+        </div>
+        <div class="contact-group">
+          <img src="./pic/icon/icons8-enveloppe-cerclée-50.png" alt="">
+          <a href="https://mailto:narovanam@gmail.com">narovanam@gmail.com</a>
+        </div>
+        <div class="contact-group">
+          <img src="./pic/icon/icons8-facebook-nouveau-50.png" alt="">
+          <a href="https://www.facebook.com/narovanam.rakotoson">Narovana</a>
+        </div>
+        <div class="contact-group">
+          <img src="./pic/icon/icons8-instagram-50.png" alt="">
+          <a href="https://www.instagram.com/mahery__n">@mahery__n</a>
+        </div>
+        <div class="contact-group">
+          <img src="./pic/icon/icons8-snapchat-logo-encerclé-50.png" alt="">
+          <a href="https://www.snapchat.com/add/narovanaaa?share_id=kcPn00KLQBio58Nk664qoA&locale=fr_MG">narovanaaa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
