@@ -1002,3 +1002,23 @@ body.light-mode {
     touch-action: manipulation;
   }
 }
+
+#add-btn {
+  background-color: $tertiaire;
+  border-radius: 12px;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+  a{
+    color: $secondary;
+    transition: all 0.3s ;
+  }
+
+  &:hover {
+  transform: scale(0.8);
+  box-shadow: 2px 3px 3px #e07a3fb3;
+  border: 3px solid $accent;
+    a{
+      color: $primary;
+    }
+  }
+}

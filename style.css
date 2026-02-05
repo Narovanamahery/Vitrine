@@ -942,4 +942,22 @@ body.light-mode .container .contactpage .contact-section .contact-group a {
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
   }
+}
+#add-btn {
+  background-color: #F3F5F4;
+  border-radius: 12px;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+}
+#add-btn a {
+  color: #1E3A40;
+  transition: all 0.3s;
+}
+#add-btn:hover {
+  transform: scale(0.8);
+  box-shadow: 2px 3px 3px rgba(224, 122, 63, 0.7019607843);
+  border: 3px solid #E07A3F;
+}
+#add-btn:hover a {
+  color: #0F2A2F;
 }/*# sourceMappingURL=style.css.map */
