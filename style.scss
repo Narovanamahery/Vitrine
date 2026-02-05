@@ -1005,9 +1005,13 @@ body.light-mode {
 
 #add-btn {
   background-color: $tertiaire;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
   margin-left: 20px;
   transition: all 0.3s ease;
+  box-shadow: 2px 3px 3px #e07a3fb3;
   a{
     color: $secondary;
     transition: all 0.3s ;
