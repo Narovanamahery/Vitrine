@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Narovana Mahery Rakotoson — Ingénieur Agronome spécialisé en production animale, nutrition, modélisation et agritech à Madagascar.">
+  <meta property="og:title" content="Narovana Mahery — Ingénieur Agronome">
+  <meta property="og:description" content="Production animale · Agritech · Modélisation · Madagascar">
+  <meta property="og:image" content="./pic/Picture.jpeg">
+  <meta property="og:type" content="website">
   <title>Narovana Mahery — Ingénieur Agronome</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +19,16 @@
 
   <header class="header" id="header">
     <a href="#home" class="logo-container">
-      <img src="./pic/logo2.png" alt="Logo Narovana">
+      <img src="./pic/logo2.png" alt="Logo Narovana" loading="lazy">
       <span>Ingénieur Agronome</span>
     </a>
     <nav class="nav-desktop">
-      <a href="#home" class="nav-link">Accueil</a>
-      <a href="#about" class="nav-link">À Propos</a>
-      <a href="#expertise" class="nav-link">Expertises</a>
-      <a href="#parcours" class="nav-link">Parcours</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#home"        class="nav-link">Accueil</a>
+      <a href="#about"       class="nav-link">À Propos</a>
+      <a href="#expertise"   class="nav-link">Expertises</a>
+      <a href="#projets"     class="nav-link">Projets</a>
+      <a href="#competences" class="nav-link">Compétences</a>
+      <a href="#contact"     class="nav-link">Contact</a>
     </nav>
     <div class="header-actions">
       <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
@@ -38,79 +44,46 @@
   </header>
 
   <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
-    <a href="#home" class="mobile-nav-link">Accueil</a>
-    <a href="#about" class="mobile-nav-link">À Propos</a>
-    <a href="#expertise" class="mobile-nav-link">Expertises</a>
-    <a href="#parcours" class="mobile-nav-link">Parcours</a>
-    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#home"        class="mobile-nav-link">Accueil</a>
+    <a href="#about"       class="mobile-nav-link">À Propos</a>
+    <a href="#expertise"   class="mobile-nav-link">Expertises</a>
+    <a href="#projets"     class="mobile-nav-link">Projets</a>
+    <a href="#competences" class="mobile-nav-link">Compétences</a>
+    <a href="#contact"     class="mobile-nav-link">Contact</a>
   </nav>
 
   <section class="hero" id="home">
-    <div class="slides-wrapper" id="slides-wrapper">
-      <div class="slide active" style="background-image: url('./pic/visuel.png');">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <p class="slide-label">Production Animale</p>
-          <h1 class="slide-title">« Maîtriser la complexité<br>du vivant, du sol au cheptel. »</h1>
-          <a href="#about" class="slide-cta">Découvrir</a>
-        </div>
-      </div>
-      <div class="slide" style="background-image: url('./pic/visuel1.jpg');">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <p class="slide-label">Nutrition & Performances</p>
-          <h1 class="slide-title">« Maximiser l'efficacité<br>alimentaire et l'indice<br>de consommation. »</h1>
-          <a href="#expertise" class="slide-cta">Mes expertises</a>
-        </div>
-      </div>
-      <div class="slide" style="background-image: url('./pic/visuel2.png');">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <p class="slide-label">Agritech & Modélisation</p>
-          <h1 class="slide-title">« Transformer la donnée<br>d'élevage en décisions<br>rentables. »</h1>
-          <a href="#expertise" class="slide-cta">Découvrir les outils</a>
-        </div>
-      </div>
-      <div class="slide" style="background-image: url('./pic/visuel3.avif');">
-        <div class="slide-overlay"></div>
-        <div class="slide-content">
-          <p class="slide-label">Génétique & Environnement</p>
-          <h1 class="slide-title">« Optimiser l'environnement<br>pour révéler le potentiel<br>génétique. »</h1>
-          <a href="#contact" class="slide-cta">Me contacter</a>
-        </div>
-      </div>
-    </div>
+    <div class="slides-wrapper" id="slides-wrapper"></div>
     <button class="slide-btn prev-btn" aria-label="Précédent">&#8249;</button>
     <button class="slide-btn next-btn" aria-label="Suivant">&#8250;</button>
-    <div class="slide-indicators">
-      <span class="indicator active" data-slide="0"></span>
-      <span class="indicator" data-slide="1"></span>
-      <span class="indicator" data-slide="2"></span>
-      <span class="indicator" data-slide="3"></span>
-    </div>
+    <div class="slide-indicators"></div>
     <div class="autoplay-track"><div class="autoplay-bar" id="autoplay-bar"></div></div>
+  </section>
+
+  <section class="stats-section" id="stats">
+    <div class="stats-inner" id="stats-row"></div>
   </section>
 
   <section class="about-section" id="about">
     <div class="section-inner">
-      <div class="about-photo-col">
+      <div class="about-photo-col reveal">
         <div class="about-photo-wrap">
-          <img src="./pic/Picture.jpeg" alt="Narovana Mahery">
+          <img src="./pic/Picture.jpeg" alt="Narovana Mahery" loading="lazy">
           <div class="about-photo-deco"></div>
         </div>
       </div>
       <div class="about-text-col">
-        <p class="section-label">À Propos</p>
-        <h2 class="section-title">Narovana Mahery<br><em>Rakotoson</em></h2>
-        <p class="about-tagline">Ingénieur Agronome · Production Animale · Agritech</p>
-        <p class="about-body">Tourné vers l'agritech, je maîtrise les outils de modélisation et d'aide à la décision. Je transforme les données de terrain en leviers stratégiques pour une gestion intelligente et optimisée des exploitations animales.</p>
-        <p class="about-body">Mon approche allie rigueur scientifique, efficacité technique et valorisation des ressources locales — pour des élevages plus performants, durables et respectueux du bien-être animal.</p>
-        <div class="about-langs">
+        <p class="section-label reveal reveal-d1">À Propos</p>
+        <h2 class="section-title reveal reveal-d2">Narovana Mahery<br><em>Rakotoson</em></h2>
+        <span class="about-tagline typing-target reveal reveal-d2"></span>
+        <p class="about-body reveal reveal-d3">Tourné vers l'agritech, je maîtrise les outils de modélisation et d'aide à la décision. Je transforme les données de terrain en leviers stratégiques pour une gestion intelligente et optimisée des exploitations animales.</p>
+        <p class="about-body reveal reveal-d4">Mon approche allie rigueur scientifique, efficacité technique et valorisation des ressources locales — pour des élevages plus performants, durables et respectueux du bien-être animal.</p>
+        <div class="about-langs reveal reveal-d4">
           <span class="lang-badge">🇲🇬 Malgache</span>
           <span class="lang-badge">🇫🇷 Français</span>
           <span class="lang-badge">🇬🇧 Anglais</span>
         </div>
-        <a href="./Rakotoson_narovana_mahery.pdf" download class="btn-cv">
+        <a href="./Rakotoson_narovana_mahery.pdf" download class="btn-cv reveal reveal-d5">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           Télécharger mon CV
         </a>
@@ -120,192 +93,51 @@
 
   <section class="expertise-section" id="expertise">
     <div class="section-inner">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-label">Ce que je fais</p>
         <h2 class="section-title">Expertises</h2>
       </div>
-      <div class="expertise-grid">
-        <div class="expertise-card">
-          <div class="expertise-icon"><img src="./pic/icon/ico-opt.png" alt=""></div>
-          <h3>Conception & Optimisation</h3>
-          <p>Conception de systèmes d'élevage adaptés aux réalités locales. Optimisation des flux de production, conditions d'hébergement et gestion du cheptel.</p>
-        </div>
-        <div class="expertise-card">
-          <div class="expertise-icon"><img src="./pic/icon/ico-eco.png" alt=""></div>
-          <h3>Analyse Technico-Économique</h3>
-          <p>Évaluation des performances zootechniques et économiques. Calcul des indices de consommation, marges brutes et indicateurs de rentabilité.</p>
-        </div>
-        <div class="expertise-card">
-          <div class="expertise-icon"><img src="./pic/icon/ico-durabilité.png" alt=""></div>
-          <h3>Durabilité & Bien-être Animal</h3>
-          <p>Intégration des pratiques durables. Respect des normes de bien-être animal et réduction de l'empreinte environnementale des exploitations.</p>
-        </div>
-        <div class="expertise-card">
-          <div class="expertise-icon"><img src="./pic/icon/ico-ingénierie.png" alt=""></div>
-          <h3>Modélisation & Agritech</h3>
-          <p>Maîtrise des outils numériques de modélisation et d'aide à la décision. Données terrain transformées en leviers stratégiques opérationnels.</p>
-        </div>
-        <div class="expertise-card">
-          <div class="expertise-icon expertise-icon--text">🌱</div>
-          <h3>Autosuffisance Alimentaire</h3>
-          <p>Conception de projets pour l'autosuffisance alimentaire. Formation et encadrement des paysans aux techniques de production optimisées.</p>
-        </div>
-        <div class="expertise-card">
-          <div class="expertise-icon expertise-icon--text">🔒</div>
-          <h3>Outils Numériques</h3>
-          <p>Maîtrise des outils informatiques agricoles. Certifié en cybersécurité pour une gestion sécurisée des données d'exploitation.</p>
-        </div>
-      </div>
+      <div class="expertise-grid" id="expertise-grid"></div>
     </div>
   </section>
 
-  <!-- <section class="parcours-section" id="parcours">
+  <section class="projects-section" id="projets">
     <div class="section-inner">
-      <div class="section-header">
-        <p class="section-label">Mon histoire</p>
-        <h2 class="section-title">Parcours</h2>
+      <div class="section-header reveal">
+        <p class="section-label">Terrain & Missions</p>
+        <h2 class="section-title">Projets</h2>
       </div>
-      <div class="parcours-grid">
-        <div class="parcours-col">
-          <h3 class="parcours-col-title"><span class="parcours-col-icon">🎓</span> Formations</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">2021 — 2025</span>
-                <h4>Sciences Agronomiques</h4>
-                <p>Umagis / EPSA Bevalala</p>
-                <span class="timeline-badge">En cours</span>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Avr. — Juin 2024</span>
-                <h4>Certificat en Cybersécurité</h4>
-                <p>Centre de Formation Technologique</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">2020</span>
-                <h4>Baccalauréat Série D</h4>
-                <p>Lycée Saint Michel Itaosy</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="parcours-col">
-          <h3 class="parcours-col-title"><span class="parcours-col-icon">💼</span> Expériences</h3>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Janvier 2025</span>
-                <h4>Technicien Réalisateur</h4>
-                <p>Ac DELCO — Fianarantsoa</p>
-                <ul class="timeline-tasks">
-                  <li>Conception de projets pour l'autosuffisance alimentaire</li>
-                  <li>Formation et encadrement des paysans</li>
-                  <li>Coordination et optimisation des flux de production</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Août — Oct. 2022</span>
-                <h4>Opérateur de Production</h4>
-                <p>Aikko Impex Agriculture — Antsirabe</p>
-                <ul class="timeline-tasks">
-                  <li>Contrôle qualité des lignes de production</li>
-                  <li>Coordination inter-services</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <span class="timeline-date">Avr. — Juin 2021</span>
-                <h4>Ouvrier</h4>
-                <p>Tambohobe Katsaoka</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="skills-row">
-        <span class="skill-tag">Capacité d'adaptation</span>
-        <span class="skill-tag">Pédagogie & conseil</span>
-        <span class="skill-tag">Gestion de projet</span>
-        <span class="skill-tag">Esprit d'analyse</span>
-        <span class="skill-tag">Outils informatiques</span>
-        <span class="skill-tag">Gestion de cheptel</span>
-        <span class="skill-tag">Modélisation</span>
-        <span class="skill-tag">Agritech</span>
-      </div>
+      <div class="projects-grid" id="projects-grid"></div>
     </div>
-  </section> -->
+  </section>
+
+  <section class="competences-section" id="competences">
+    <div class="section-inner">
+      <div class="section-header reveal">
+        <p class="section-label">Maîtrise technique</p>
+        <h2 class="section-title">Compétences <em>&</em> Formations</h2>
+      </div>
+      <div id="skills-container"></div>
+      <hr class="competences-divider">
+      <p class="certs-sub-label reveal">Certifications & Diplômes</p>
+      <div class="certs-grid" id="certs-grid"></div>
+    </div>
+  </section>
 
   <section class="contact-section" id="contact">
     <div class="section-inner">
-      <div class="section-header">
+      <div class="section-header reveal">
         <p class="section-label">Travaillons ensemble</p>
         <h2 class="section-title">Contact</h2>
       </div>
-      <div class="contact-grid">
-        <a href="https://wa.me/261382298810" class="contact-card" target="_blank" rel="noopener">
-          <img src="./pic/icon/icons8-whatsapp-50.png" alt="WhatsApp">
-          <div>
-            <span class="contact-card-label">WhatsApp</span>
-            <span class="contact-card-value">+261 38 22 988 10</span>
-          </div>
-        </a>
-        <a href="mailto:narovanam@gmail.com" class="contact-card">
-          <img src="./pic/icon/icons8-enveloppe-cerclée-50.png" alt="Email">
-          <div>
-            <span class="contact-card-label">Email</span>
-            <span class="contact-card-value">narovanam@gmail.com</span>
-          </div>
-        </a>
-        <a href="https://www.facebook.com/narovanam.rakotoson" class="contact-card" target="_blank" rel="noopener">
-          <img src="./pic/icon/icons8-facebook-nouveau-50.png" alt="Facebook">
-          <div>
-            <span class="contact-card-label">Facebook</span>
-            <span class="contact-card-value">Narovana</span>
-          </div>
-        </a>
-        <a href="https://www.instagram.com/mahery__n" class="contact-card" target="_blank" rel="noopener">
-          <img src="./pic/icon/icons8-instagram-50.png" alt="Instagram">
-          <div>
-            <span class="contact-card-label">Instagram</span>
-            <span class="contact-card-value">@mahery__n</span>
-          </div>
-        </a>
-        <a href="https://www.snapchat.com/add/narovanaaa" class="contact-card" target="_blank" rel="noopener">
-          <img src="./pic/icon/icons8-snapchat-logo-encerclé-50.png" alt="Snapchat">
-          <div>
-            <span class="contact-card-label">Snapchat</span>
-            <span class="contact-card-value">narovanaaa</span>
-          </div>
-        </a>
-        <a href="tel:+261382298810" class="contact-card contact-card--cta"
-           onclick="if(!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)){alert('Utilisez un mobile pour enregistrer ce contact');return false;}">
-          <span class="contact-cta-icon">＋</span>
-          <div>
-            <span class="contact-card-label">Enregistrer</span>
-            <span class="contact-card-value">Ajouter aux contacts</span>
-          </div>
-        </a>
-      </div>
+      <div class="contact-grid" id="contact-grid"></div>
     </div>
   </section>
 
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <img src="./pic/logo2.png" alt="Logo">
+        <img src="./pic/logo2.png" alt="Logo" loading="lazy">
         <div>
           <p class="footer-name">Narovana Mahery Rakotoson</p>
           <p class="footer-tagline">Ingénieur Agronome · Production Animale</p>
@@ -315,13 +147,14 @@
         <a href="#home">Accueil</a>
         <a href="#about">À Propos</a>
         <a href="#expertise">Expertises</a>
-        <a href="#parcours">Parcours</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
         <a href="#contact">Contact</a>
       </nav>
       <p class="footer-copy">© 2025 Narovana Mahery Rakotoson · Tous droits réservés</p>
     </div>
   </footer>
 
-  <script src="./script-new.js"></script>
+  <script type="module" src="./script-new.js"></script>
 </body>
 </html>
