@@ -1,2 +1,0 @@
-# Vitrine
-First site web
