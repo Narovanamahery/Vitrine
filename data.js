@@ -19,7 +19,7 @@ export const config = {
 
 export const stats = [
   { value: 5, suffix: '+', label: 'Années de formation' },
-  { value: 3, suffix: '',  label: 'Expériences terrain' },
+  { value: 4, suffix: '',  label: 'Expériences terrain' },
   { value: 2, suffix: '',  label: 'Certifications' },
   { value: 3, suffix: '',  label: 'Langues maîtrisées' },
 ];
