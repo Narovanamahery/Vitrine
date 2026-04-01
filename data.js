@@ -93,7 +93,7 @@ export const projects = [
     tags: ['Gestion d\'elevage', 'Développement', 'Cuniculture'],
     desc: "Conception et mise en œuvre d'une application de gestion d'élevage cunicole. Développement de fonctionnalités pour le suivi de la production, la gestion du cheptel et l'optimisation des performances.",
     outcomes: [
-      'Conception d\'une application de gestion d\'élevage',
+      'En cours de développement',
       'Optimisation des processus de suivi de production',
       'Transfert de compétences aux utilisateurs',
     ],
