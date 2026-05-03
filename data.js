@@ -20,7 +20,7 @@ export const config = {
 export const stats = [
   { value: 5, suffix: '+', label: 'Années de formation' },
   { value: 4, suffix: '',  label: 'Expériences terrain' },
-  { value: 2, suffix: '',  label: 'Certifications' },
+  { value: 4, suffix: '',  label: 'Certifications' },
   { value: 3, suffix: '',  label: 'Langues maîtrisées' },
 ];
 
@@ -160,12 +160,14 @@ export const skills = {
     { label: 'Modélisation & Agritech',  level: 78 },
     { label: 'Bien-être & Durabilité',   level: 80 },
     { label: 'Génétique Animale',        level: 75 },
+    { label: 'Investisment Risk Management', level: 80 },
   ],
   tools: [
     { label: 'Microsoft Office',        level: 92 },
     { label: 'Outils de modélisation',  level: 75 },
     { label: 'Cybersécurité',           level: 72 },
     { label: 'R / Statistiques',        level: 68 },
+    { label: 'Treynor Ratio',           level: 76 },
   ],
 };
 
@@ -177,6 +179,22 @@ export const certifications = [
     org: 'Umagis / EPSA Bevalala',
     year: '2021 — 2025',
     badge: 'En cours',
+  },
+  {
+    icon: '💀',
+    type: 'Certification',
+    title: 'Investment Risk Management',
+    org: 'Coursera',
+    year: 'Avr. 2026',
+    badge: 'Acheved',
+  },
+  {
+    icon:  '<img src="https://em-content.zobj.net/source/apple/51/flag-for-united-states_1f1fa-1f1f8.png" loading="lazy" alt="iOS 8.3" class="w-auto h-full" style="width: 24px; height: 24px;"></img>',
+    type: 'Certification',
+    title: 'English',
+    org: 'EF SET',
+    year: 'Avr. 2026',
+    badge: 'Niv. C1',
   },
   {
     icon: '🔒',
